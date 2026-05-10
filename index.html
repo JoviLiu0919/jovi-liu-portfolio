@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovi Liu - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+        }
+        .dark-blue-bg {
+            background-color: #0f172a;
+        }
+        .skill-bar {
+            transition: width 1s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- 導航欄 -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-blue-400">Jovi Liu</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-400 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-400 transition-colors">About</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-400 transition-colors">Skills</a>
+                    <a href="#experience" class="text-gray-700 hover:text-blue-400 transition-colors">Experience</a>
+                    <a href="#education" class="text-gray-700 hover:text-blue-400 transition-colors">Education</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-400 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 手機選單 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-blue-400">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-blue-400">About</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-700 hover:text-blue-400">Skills</a>
+                <a href="#experience" class="block px-3 py-2 text-gray-700 hover:text-blue-400">Experience</a>
+                <a href="#education" class="block px-3 py-2 text-gray-700 hover:text-blue-400">Education</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-blue-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主頁區塊 -->
+    <section id="home" class="pt-16 gradient-bg min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="text-center md:text-left md:w-1/2">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                        Hi, I'm Jovi Liu
+                    </h1>
+                    <p class="text-xl text-blue-100 mb-8">
+                        Senior Software PM | BIOS PM | Firmware Developer
+                    </p>
+                    <div class="flex gap-4 justify-center md:justify-start">
+                        <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors shadow-lg">
+                            Contact Me
+                        </a>
+                        <a href="#about" class="border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition-colors">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="Image.jpg" alt="Jovi Liu" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於我區塊 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About Me</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                    <ul class="space-y-4 text-lg text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-3">•</span>
+                            <span>Senior Software PM with 4+ years of experience supporting Dell client platforms</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-3">•</span>
+                            <span>BIOS PM with 7 years of experience across consumer and commercial desktops and notebooks at Acer</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-3">•</span>
+                            <span>BIOS/Firmware Developer with 3+ years of experience in server and embedded systems</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-3">•</span>
+                            <span>Strong knowledge of computer architecture, assembly, and C programming</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-3">•</span>
+                            <span>Experienced in both UEFI and legacy firmware development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-3">•</span>
+                            <span>Skilled in developing, customizing, and maintaining in-house and IBV BIOS solutions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-3">•</span>
+                            <span>One year of firmware development experience on ARM platforms</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能區塊 -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Professional Skills</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- Skill 1 -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium text-gray-700">UEFI & Legacy BIOS Development</span>
+                        <span class="text-blue-600">Expert</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+                <!-- Skill 2 -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium text-gray-700">Computer Architecture & Assembly</span>
+                        <span class="text-blue-600">Expert</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 92%"></div>
+                    </div>
+                </div>
+                <!-- Skill 3 -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium text-gray-700">C Programming</span>
+                        <span class="text-blue-600">Expert</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                <!-- Skill 4 -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium text-gray-700">ARM Platform Firmware Development</span>
+                        <span class="text-blue-600">Advanced</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                <!-- Skill 5 -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium text-gray-700">Program Management</span>
+                        <span class="text-blue-600">Expert</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 88%"></div>
+                    </div>
+                </div>
+                <!-- Skill 6 -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium text-gray-700">JIRA / SCRUM / KANBAN</span>
+                        <span class="text-blue-600">Advanced</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 82%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 經歷區塊 -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Work Experience</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <!-- Experience 1 -->
+                <div class="border-l-4 border-blue-600 pl-6">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900">Senior SW Program Manager</h3>
+                        <span class="text-blue-600 font-medium">September 2021 – Present</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">Dell Technologies</p>
+                    <p class="text-gray-700">
+                        Driver/BIOS/Software Release Planning/Process/Management, Dell Best Known Configuration Program,
+                        Digitalization system design and innovation, JIRA SCRUM/KANBAN implementation and execution.
+                    </p>
+                </div>
+                <!-- Experience 2 -->
+                <div class="border-l-4 border-blue-500 pl-6">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900">Associate RD Manager</h3>
+                        <span class="text-blue-600 font-medium">September 2014 – September 2021</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">Acer Incorporated</p>
+                    <p class="text-gray-700">
+                        Product BIOS management, BIOS feature planning, Overclock tuning, Patent submission.
+                    </p>
+                </div>
+                <!-- Experience 3 -->
+                <div class="border-l-4 border-blue-400 pl-6">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900">Senior BIOS Engineer</h3>
+                        <span class="text-blue-600 font-medium">February 2014 – September 2014</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">Inventec Corporation</p>
+                    <p class="text-gray-700">
+                        AMI BIOS development and maintenance, Data center projects for Microsoft.
+                    </p>
+                </div>
+                <!-- Experience 4 -->
+                <div class="border-l-4 border-blue-300 pl-6">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900">Product Manager</h3>
+                        <span class="text-blue-600 font-medium">June 2013 – February 2014</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">iEi Technology USA Corporation</p>
+                    <p class="text-gray-700">
+                        Preparing budgetary quotation with product spec, Technical communication between customer and engineering teams.
+                    </p>
+                </div>
+                <!-- Experience 5 -->
+                <div class="border-l-4 border-blue-200 pl-6">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900">BIOS Engineer</h3>
+                        <span class="text-blue-600 font-medium">August 2010 – June 2013</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">Wistron Corporation</p>
+                    <p class="text-gray-700">
+                        Developed and maintained DELL server BIOS.
+                    </p>
+                </div>
+                <!-- Experience 6 -->
+                <div class="border-l-4 border-blue-200 pl-6">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900">Validation Engineer</h3>
+                        <span class="text-blue-600 font-medium">August 2009 – June 2010</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">TomTom International BV</p>
+                    <p class="text-gray-700">
+                        Designed interface to integrate GPS signals with sensors, Validated AP of TomTom products.
+                    </p>
+                </div>
+                <!-- Experience 7 -->
+                <div class="border-l-4 border-blue-200 pl-6">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900">Plan Researcher</h3>
+                        <span class="text-blue-600 font-medium">July 2009 – June 2010</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">Institute for Information Industry</p>
+                    <p class="text-gray-700">
+                        Integrated GPS signals with inertia sensors, Signal process and data analysis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Education</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <!-- Education 1 -->
+                <div class="border-l-4 border-blue-600 pl-6">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900">Master of Mechanical Engineering, Automation and Control</h3>
+                        <span class="text-blue-600 font-medium">June 2010</span>
+                    </div>
+                    <p class="text-gray-600">National Taiwan University of Science and Technology, Taipei, Taiwan</p>
+                </div>
+                <!-- Education 2 -->
+                <div class="border-l-4 border-blue-400 pl-6">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900">Bachelor of Mechanical Engineering</h3>
+                        <span class="text-blue-600 font-medium">June 2008</span>
+                    </div>
+                    <p class="text-gray-600">Chung Yuan Christian University, Taoyuan, Taiwan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡區塊 -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contact Me</h2>
+            <div class="max-w-xl mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                        <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                        <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                        <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-lg">
+                        Send Message
+                    </button>
+                </form>
+                <div class="mt-8 flex justify-center gap-6">
+                    <a href="#" class="text-gray-600 hover:text-blue-400 transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-400 transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:liu-jovi@hotmail.com" class="text-gray-600 hover:text-blue-400 transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="mt-12 text-center">
+                    <div class="space-y-3">
+                        <p class="text-gray-600">
+                            <span class="font-medium">Email:</span>
+                            <a href="mailto:liu-jovi@hotmail.com" class="text-blue-600 hover:underline ml-2">liu-jovi@hotmail.com</a>
+                        </p>
+                        <p class="text-gray-600">
+                            <span class="font-medium">Phone:</span>
+                            <a href="tel:+886-911865228" class="text-blue-600 hover:underline ml-2">+886-911865228</a>
+                        </p>
+                        <p class="text-gray-600">
+                            <span class="font-medium">Location:</span>
+                            <span class="ml-2">Pingzhen City, Taoyuan County, Taiwan (R.O.C.)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">© 2024 Jovi Liu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 手機選單切換
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // 平滑滾動
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // 關閉手機選單
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
