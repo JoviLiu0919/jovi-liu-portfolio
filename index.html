@@ -34,8 +34,9 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#home" class="text-gray-700 hover:text-blue-400 transition-colors">Home</a>
                     <a href="#about" class="text-gray-700 hover:text-blue-400 transition-colors">About</a>
-                    <a href="#skills" class="text-gray-700 hover:text-blue-400 transition-colors">Skills</a>
+                    <a href="#achievements" class="text-gray-700 hover:text-blue-400 transition-colors">Achievements</a>
                     <a href="#experience" class="text-gray-700 hover:text-blue-400 transition-colors">Experience</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-400 transition-colors">Skills</a>
                     <a href="#education" class="text-gray-700 hover:text-blue-400 transition-colors">Education</a>
                     <a href="#contact" class="text-gray-700 hover:text-blue-400 transition-colors">Contact</a>
                 </div>
@@ -53,8 +54,9 @@
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-blue-400">Home</a>
                 <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-blue-400">About</a>
-                <a href="#skills" class="block px-3 py-2 text-gray-700 hover:text-blue-400">Skills</a>
+                <a href="#achievements" class="block px-3 py-2 text-gray-700 hover:text-blue-400">Achievements</a>
                 <a href="#experience" class="block px-3 py-2 text-gray-700 hover:text-blue-400">Experience</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-700 hover:text-blue-400">Skills</a>
                 <a href="#education" class="block px-3 py-2 text-gray-700 hover:text-blue-400">Education</a>
                 <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-blue-400">Contact</a>
             </div>
@@ -131,70 +133,90 @@
         </div>
     </section>
 
-    <!-- 技能區塊 -->
-    <section id="skills" class="py-20 bg-gray-50">
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Professional Skills</h2>
-            <div class="max-w-3xl mx-auto space-y-6">
-                <!-- Skill 1 -->
-                <div>
-                    <div class="flex justify-between mb-2">
-                        <span class="font-medium text-gray-700">UEFI & Legacy BIOS Development</span>
-                        <span class="text-blue-600">Expert</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Key Achievements</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Dell BKC Delivery Excellence</h3>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        Managed and optimized the Dell BKC (BIOS/Driver/Software) delivery process, ensuring timely validation and release of platform updates. Key performance indicators demonstrate efficient throughput and high pass rates.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <div class="text-3xl font-bold text-green-600 mb-2">342</div>
+                            <div class="text-gray-700">In-scope</div>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <div class="text-3xl font-bold text-green-600 mb-2">89%</div>
+                            <div class="text-gray-700">Compliance Rate</div>
+                        </div>
                     </div>
-                    <div class="w-full bg-gray-200 rounded-full h-3">
-                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 95%"></div>
-                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">•</span>
+                            <span>Managed 342 platforms for validation completion and Super Tuesday release</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">•</span>
+                            <span>Optimized delivery process to ensure 89% overall throughput efficiency</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">•</span>
+                            <span>Coordinated with ODM partners and internal teams to ensure timely delivery and compliance</span>
+                        </li>
+                    </ul>
                 </div>
-                <!-- Skill 2 -->
-                <div>
-                    <div class="flex justify-between mb-2">
-                        <span class="font-medium text-gray-700">Computer Architecture & Assembly</span>
-                        <span class="text-blue-600">Expert</span>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Sustaining BIOS/SW Issue Management Dashboard</h3>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        Designed and implemented a comprehensive Power BI dashboard for sustaining BIOS/SW issue management, enabling data-driven decision making and significantly improving team operational efficiency. The dashboard provides real-time visibility into issue metrics and facilitates proactive problem resolution.
+                    </p>
+                    <div class="mb-6">
+                        <img src="sus_issue_pbi.jpg" alt="Sustaining BIOS/SW Issue Management Dashboard" class="w-full rounded-lg shadow-md">
                     </div>
-                    <div class="w-full bg-gray-200 rounded-full h-3">
-                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 92%"></div>
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">6,463</div>
+                            <div class="text-gray-700">Total Issues Managed</div>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">84%</div>
+                            <div class="text-gray-700">Issue Closure Rate</div>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">71.5 days</div>
+                            <div class="text-gray-700">Average Resolution Velocity</div>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">1,028</div>
+                            <div class="text-gray-700">Open Issues Controlled</div>
+                        </div>
                     </div>
-                </div>
-                <!-- Skill 3 -->
-                <div>
-                    <div class="flex justify-between mb-2">
-                        <span class="font-medium text-gray-700">C Programming</span>
-                        <span class="text-blue-600">Expert</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-3">
-                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 90%"></div>
-                    </div>
-                </div>
-                <!-- Skill 4 -->
-                <div>
-                    <div class="flex justify-between mb-2">
-                        <span class="font-medium text-gray-700">ARM Platform Firmware Development</span>
-                        <span class="text-blue-600">Advanced</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-3">
-                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 85%"></div>
-                    </div>
-                </div>
-                <!-- Skill 5 -->
-                <div>
-                    <div class="flex justify-between mb-2">
-                        <span class="font-medium text-gray-700">Program Management</span>
-                        <span class="text-blue-600">Expert</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-3">
-                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 88%"></div>
-                    </div>
-                </div>
-                <!-- Skill 6 -->
-                <div>
-                    <div class="flex justify-between mb-2">
-                        <span class="font-medium text-gray-700">JIRA / SCRUM / KANBAN</span>
-                        <span class="text-blue-600">Advanced</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-3">
-                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 82%"></div>
-                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-3">•</span>
+                            <span>Created comprehensive dashboard for tracking and analyzing BIOS/SW sustaining issues</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-3">•</span>
+                            <span>Optimized issue prioritization through severity analysis (9.76% High, 58.95% Medium, 31.29% Low severity)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-3">•</span>
+                            <span>Identified key problem areas: BIOS/Operating System/SW apps & Technology</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-3">•</span>
+                            <span>Driven continuous improvement by tracking and resolving critical firmware and BIOS issues</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-3">•</span>
+                            <span>Enhanced product stability through systematic issue resolution and root cause analysis</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -282,6 +304,75 @@
                     <p class="text-gray-700">
                         Integrated GPS signals with inertia sensors, Signal process and data analysis.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能區塊 -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Professional Skills</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- Skill 1 -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium text-gray-700">UEFI & Legacy BIOS Development</span>
+                        <span class="text-blue-600">Expert</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+                <!-- Skill 2 -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium text-gray-700">Computer Architecture & Assembly</span>
+                        <span class="text-blue-600">Expert</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 92%"></div>
+                    </div>
+                </div>
+                <!-- Skill 3 -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium text-gray-700">C Programming</span>
+                        <span class="text-blue-600">Expert</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                <!-- Skill 4 -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium text-gray-700">ARM Platform Firmware Development</span>
+                        <span class="text-blue-600">Advanced</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                <!-- Skill 5 -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium text-gray-700">Program Management</span>
+                        <span class="text-blue-600">Expert</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 88%"></div>
+                    </div>
+                </div>
+                <!-- Skill 6 -->
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span class="font-medium text-gray-700">JIRA / SCRUM / KANBAN</span>
+                        <span class="text-blue-600">Advanced</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 82%"></div>
+                    </div>
                 </div>
             </div>
         </div>
